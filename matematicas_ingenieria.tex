@@ -1,0 +1,127 @@
+\documentclass[12pt,letterpaper]{report}
+
+% ==================== PAQUETES ====================
+\usepackage[spanish,es-tabla]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{graphicx}
+\usepackage[left=2.5cm,right=2.5cm,top=3cm,bottom=3cm]{geometry}
+\usepackage{setspace}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{tocloft}
+\usepackage[hidelinks]{hyperref}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{enumitem}
+\usepackage{csquotes}
+
+% ==================== CONFIGURACIONES ====================
+\onehalfspacing
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\leftmark}
+\fancyhead[R]{\thepage}
+\renewcommand{\headrulewidth}{0.5pt}
+
+\titleformat{\chapter}[display]
+  {\normalfont\huge\bfseries}{\chaptertitlename\ \thechapter}{20pt}{\Huge}
+\titlespacing*{\chapter}{0pt}{0pt}{40pt}
+
+\renewcommand{\contentsname}{Índice}
+\renewcommand{\listfigurename}{Índice de Figuras}
+\renewcommand{\listtablename}{Índice de Tablas}
+\renewcommand{\bibname}{Referencias}
+
+\numberwithin{equation}{chapter}
+\numberwithin{figure}{chapter}
+\numberwithin{table}{chapter}
+
+% ==================== INFORMACIÓN DEL DOCUMENTO ====================
+\title{Integradora de Matemáticas para la Ingeniería II}
+\author{Reyes Vargas Isael Alejandro}
+\date{\today}
+
+% ==================== INICIO DEL DOCUMENTO ====================
+\begin{document}
+
+% ==================== PORTADA ====================
+\begin{titlepage}
+    \centering
+
+    \begin{minipage}{0.4\textwidth}
+        \centering
+        \includegraphics[width=0.7\textwidth]{img/logo-utez.png}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.4\textwidth}
+        \centering
+        \includegraphics[width=0.7\textwidth]{img/logo-datid.png}
+    \end{minipage}
+
+    \vspace{1cm}
+
+    {\Large\textbf{UNIVERSIDAD TECNOLÓGICA EMILIANO ZAPATA}}\\[0.5cm]
+    {\large División Académica de Tecnologías de la Información y Diseño}\\[0.5cm]
+    {\large Ingeniería en Desarrollo y Gestión de Software}\\[2cm]
+
+    \rule{\linewidth}{0.5mm}\\[0.4cm]
+    {\huge\bfseries Integradora de Matemáticas\\[0.2cm]para la Ingeniería II}\\[0.2cm]
+    \rule{\linewidth}{0.5mm}\\[2cm]
+
+    {\Large\textbf{Proyecto Integrador}}\\[1.5cm]
+
+    \begin{minipage}{0.8\textwidth}
+        \begin{flushleft}
+            \textbf{Materia:}\\
+            Matemáticas para Ingeniería II\\[0.5cm]
+
+            \textbf{Profesor:}\\
+            Dr. Jorge Yusef Colin Castillo\\[0.5cm]
+
+            \textbf{Grupo:} 8 C\\[0.5cm]
+
+            \textbf{Integrantes del Equipo:}\\
+            \begin{itemize}[leftmargin=1cm]
+                \item Reyes Vargas Isael Alejandro
+            \end{itemize}
+        \end{flushleft}
+    \end{minipage}
+
+    \vfill
+
+    {\large Emiliano Zapata, Morelos, México}\\
+    {\large \today}
+\end{titlepage}
+
+% ==================== ÍNDICES ====================
+\tableofcontents
+\cleardoublepage
+
+\listoffigures
+\cleardoublepage
+
+% ==================== UNIDAD I ====================
+\chapter{Unidad I}
+% Inicio del contenido de la Unidad I: agregar \section{}, \subsection{}, ecuaciones, figuras y referencias aquí.
+
+% ==================== UNIDAD II ====================
+\chapter{Unidad II}
+% Inicio del contenido de la Unidad II: agregar \section{}, \subsection{}, ecuaciones, figuras y referencias aquí.
+
+% ==================== UNIDAD III ====================
+% --- Inicio Unidad III (reservada; no editar sin acuerdo del equipo) ---
+\chapter{Unidad III}
+% Contenido a cargo de otro integrante o equipo. Mantener este capítulo vacío hasta coordinación.
+
+% ==================== REFERENCIAS ====================
+\begin{thebibliography}{99}
+% Ejemplo de entrada (sustituir o ampliar según las fuentes del proyecto):
+% \bibitem{clave}
+% Autor. (Año). \textit{Título}. Editorial. URL si aplica.
+\end{thebibliography}
+
+\end{document}
